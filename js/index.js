@@ -18,8 +18,9 @@ if (d < 0) {
 
 
 function quadEq(a, b, c) {
-        let x1 = (-b + (Math.sqrt(discr))) / (2 * a);
-        let x2 = (-b - (Math.sqrt(discr))) / (2 * a);
+    const dis = discr(a, b, c);
+        x1 = (-b + (Math.sqrt(dis))) / (2 * a);
+        x2 = (-b - (Math.sqrt(dis))) / (2 * a);
     return x1, x2;
 }
 
